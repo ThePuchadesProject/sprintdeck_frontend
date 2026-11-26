@@ -20,11 +20,14 @@ This repository contains the **frontend web client** built with React and TypeSc
 - **TypeScript** — Static typing for safer development
 - **Vite** — Fast build tool and development server
 - **Tailwind CSS** — Utility-first CSS framework for styling
+- **React Router DOM** — Client-side routing and nested layouts
+- **Headless UI** & **Heroicons** — Accessible UI components and SVG icons
 
 ### Roadmap
 
 - [x] Initial project setup with React, TypeScript, Vite, and Tailwind CSS
-- [ ] Routing, main application layout, and project dashboard views
+- [x] Routing setup, `@` path alias, main application layout (`AppLayout`), logo, and responsive navigation menu (`NavMenu`)
+- [ ] Project dashboard and project creation form views
 - [ ] API client integration, data validation, and server state management
 - [ ] Full Project CRUD views and interactive modals for task management
 - [ ] User authentication flows (login, registration, account confirmation, and password recovery)
@@ -66,11 +69,14 @@ Este repositorio contiene el **cliente web (frontend)** desarrollado con React y
 - **TypeScript** — Tipado estático durante el desarrollo
 - **Vite** — Empaquetador y servidor de desarrollo rápido
 - **Tailwind CSS** — Framework CSS de utilidades para el diseño
+- **React Router DOM** — Enrutamiento en el cliente y layouts anidados
+- **Headless UI** y **Heroicons** — Componentes de interfaz accesibles e iconos SVG
 
 ### Hoja de ruta
 
 - [x] Configuración inicial del proyecto con React, TypeScript, Vite y Tailwind CSS
-- [ ] Enrutamiento, diseño principal de la aplicación y vistas del panel de proyectos
+- [x] Configuración de rutas, alias `@`, diseño principal (`AppLayout`), logotipo y menú de navegación responsive (`NavMenu`)
+- [ ] Vistas del panel de proyectos y formulario de creación de proyectos
 - [ ] Integración con la API, validación de datos y gestión del estado del servidor
 - [ ] Vistas para el CRUD completo de proyectos y modales interactivos para las tareas
 - [ ] Flujos de autenticación de usuarios (inicio de sesión, registro, confirmación de cuenta y recuperación de contraseña)

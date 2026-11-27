@@ -24,6 +24,7 @@ This repository contains the **frontend web client** built with React and TypeSc
 - **React Hook Form** — Form state management and input validation
 - **Zod** — Schema definition and TypeScript type inference
 - **Axios** — HTTP client for communicating with the REST API
+- **React-Toastify** — Toast notifications for user feedback
 - **Headless UI** & **Heroicons** — Accessible UI components and SVG icons
 
 ### Roadmap
@@ -32,7 +33,8 @@ This repository contains the **frontend web client** built with React and TypeSc
 - [x] Routing setup, `@` path alias, main application layout (`AppLayout`), logo, and responsive navigation menu (`NavMenu`)
 - [x] Project dashboard header, project creation view (`CreateProjectView`), and validated `ProjectForm` with React Hook Form
 - [x] Zod project schemas (`Project`, `ProjectFormData`), Axios client with environment variables, and `ProjectAPI.createProject`
-- [ ] Toast notifications and server state management with TanStack Query
+- [x] Toast notifications with React-Toastify and programmatic redirect after creating a project
+- [ ] Server state management with TanStack Query (`useMutation`, `useQuery`, and DevTools)
 - [ ] Full Project CRUD views and interactive modals for task management
 - [ ] User authentication flows (login, registration, account confirmation, and password recovery)
 - [ ] Team collaboration views, role-based UI permissions, task notes, and change history
@@ -82,6 +84,7 @@ Este repositorio contiene el **cliente web (frontend)** desarrollado con React y
 - **React Hook Form** — Gestión y validación de formularios
 - **Zod** — Definición de esquemas e inferencia de tipos TypeScript
 - **Axios** — Cliente HTTP para las peticiones a la API REST
+- **React-Toastify** — Notificaciones emergentes para feedback al usuario
 - **Headless UI** y **Heroicons** — Componentes de interfaz accesibles e iconos SVG
 
 ### Hoja de ruta
@@ -90,7 +93,8 @@ Este repositorio contiene el **cliente web (frontend)** desarrollado con React y
 - [x] Configuración de rutas, alias `@`, diseño principal (`AppLayout`), logotipo y menú de navegación responsive (`NavMenu`)
 - [x] Cabecera del panel de proyectos, vista de creación (`CreateProjectView`) y formulario validado (`ProjectForm`) con React Hook Form
 - [x] Esquemas de proyecto con Zod (`Project`, `ProjectFormData`), cliente Axios con variables de entorno y `ProjectAPI.createProject`
-- [ ] Notificaciones toast y gestión del estado del servidor con TanStack Query
+- [x] Notificaciones toast con React-Toastify y redirección al crear un proyecto
+- [ ] Gestión del estado del servidor con TanStack Query (`useMutation`, `useQuery` y DevTools)
 - [ ] Vistas para el CRUD completo de proyectos y modales interactivos para las tareas
 - [ ] Flujos de autenticación de usuarios (inicio de sesión, registro, confirmación de cuenta y recuperación de contraseña)
 - [ ] Vistas de gestión de equipos, permisos en interfaz según el rol, notas en tareas e historial de cambios

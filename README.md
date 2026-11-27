@@ -21,14 +21,18 @@ This repository contains the **frontend web client** built with React and TypeSc
 - **Vite** — Fast build tool and development server
 - **Tailwind CSS** — Utility-first CSS framework for styling
 - **React Router DOM** — Client-side routing and nested layouts
+- **React Hook Form** — Form state management and input validation
+- **Zod** — Schema definition and TypeScript type inference
+- **Axios** — HTTP client for communicating with the REST API
 - **Headless UI** & **Heroicons** — Accessible UI components and SVG icons
 
 ### Roadmap
 
 - [x] Initial project setup with React, TypeScript, Vite, and Tailwind CSS
 - [x] Routing setup, `@` path alias, main application layout (`AppLayout`), logo, and responsive navigation menu (`NavMenu`)
-- [ ] Project dashboard and project creation form views
-- [ ] API client integration, data validation, and server state management
+- [x] Project dashboard header, project creation view (`CreateProjectView`), and validated `ProjectForm` with React Hook Form
+- [x] Zod project schemas (`Project`, `ProjectFormData`), Axios client with environment variables, and `ProjectAPI.createProject`
+- [ ] Toast notifications and server state management with TanStack Query
 - [ ] Full Project CRUD views and interactive modals for task management
 - [ ] User authentication flows (login, registration, account confirmation, and password recovery)
 - [ ] Team collaboration views, role-based UI permissions, task notes, and change history
@@ -47,7 +51,12 @@ This repository contains the **frontend web client** built with React and TypeSc
    npm install
    ```
 
-3. Start the development server:
+3. Create your local environment file from the template:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+4. Start the development server:
    ```bash
    npm run dev
    ```
@@ -70,14 +79,18 @@ Este repositorio contiene el **cliente web (frontend)** desarrollado con React y
 - **Vite** — Empaquetador y servidor de desarrollo rápido
 - **Tailwind CSS** — Framework CSS de utilidades para el diseño
 - **React Router DOM** — Enrutamiento en el cliente y layouts anidados
+- **React Hook Form** — Gestión y validación de formularios
+- **Zod** — Definición de esquemas e inferencia de tipos TypeScript
+- **Axios** — Cliente HTTP para las peticiones a la API REST
 - **Headless UI** y **Heroicons** — Componentes de interfaz accesibles e iconos SVG
 
 ### Hoja de ruta
 
 - [x] Configuración inicial del proyecto con React, TypeScript, Vite y Tailwind CSS
 - [x] Configuración de rutas, alias `@`, diseño principal (`AppLayout`), logotipo y menú de navegación responsive (`NavMenu`)
-- [ ] Vistas del panel de proyectos y formulario de creación de proyectos
-- [ ] Integración con la API, validación de datos y gestión del estado del servidor
+- [x] Cabecera del panel de proyectos, vista de creación (`CreateProjectView`) y formulario validado (`ProjectForm`) con React Hook Form
+- [x] Esquemas de proyecto con Zod (`Project`, `ProjectFormData`), cliente Axios con variables de entorno y `ProjectAPI.createProject`
+- [ ] Notificaciones toast y gestión del estado del servidor con TanStack Query
 - [ ] Vistas para el CRUD completo de proyectos y modales interactivos para las tareas
 - [ ] Flujos de autenticación de usuarios (inicio de sesión, registro, confirmación de cuenta y recuperación de contraseña)
 - [ ] Vistas de gestión de equipos, permisos en interfaz según el rol, notas en tareas e historial de cambios
@@ -96,7 +109,12 @@ Este repositorio contiene el **cliente web (frontend)** desarrollado con React y
    npm install
    ```
 
-3. Inicia el servidor en modo desarrollo:
+3. Crea tu archivo local de variables de entorno a partir de la plantilla:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+4. Inicia el servidor en modo desarrollo:
    ```bash
    npm run dev
    ```

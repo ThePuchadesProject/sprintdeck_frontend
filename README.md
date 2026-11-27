@@ -21,6 +21,7 @@ This repository contains the **frontend web client** built with React and TypeSc
 - **Vite** — Fast build tool and development server
 - **Tailwind CSS** — Utility-first CSS framework for styling
 - **React Router DOM** — Client-side routing and nested layouts
+- **TanStack Query (React Query)** — Server state management and asynchronous mutations
 - **React Hook Form** — Form state management and input validation
 - **Zod** — Schema definition and TypeScript type inference
 - **Axios** — HTTP client for communicating with the REST API
@@ -34,7 +35,8 @@ This repository contains the **frontend web client** built with React and TypeSc
 - [x] Project dashboard header, project creation view (`CreateProjectView`), and validated `ProjectForm` with React Hook Form
 - [x] Zod project schemas (`Project`, `ProjectFormData`), Axios client with environment variables, and `ProjectAPI.createProject`
 - [x] Toast notifications with React-Toastify and programmatic redirect after creating a project
-- [ ] Server state management with TanStack Query (`useMutation`, `useQuery`, and DevTools)
+- [x] TanStack Query setup (`QueryClientProvider`), `useMutation` for project creation, and Axios error handling (`isAxiosError`)
+- [ ] Fetching and listing projects in `DashboardView` with `useQuery` and React Query DevTools
 - [ ] Full Project CRUD views and interactive modals for task management
 - [ ] User authentication flows (login, registration, account confirmation, and password recovery)
 - [ ] Team collaboration views, role-based UI permissions, task notes, and change history
@@ -81,6 +83,7 @@ Este repositorio contiene el **cliente web (frontend)** desarrollado con React y
 - **Vite** — Empaquetador y servidor de desarrollo rápido
 - **Tailwind CSS** — Framework CSS de utilidades para el diseño
 - **React Router DOM** — Enrutamiento en el cliente y layouts anidados
+- **TanStack Query (React Query)** — Gestión del estado del servidor y mutaciones asíncronas
 - **React Hook Form** — Gestión y validación de formularios
 - **Zod** — Definición de esquemas e inferencia de tipos TypeScript
 - **Axios** — Cliente HTTP para las peticiones a la API REST
@@ -94,7 +97,8 @@ Este repositorio contiene el **cliente web (frontend)** desarrollado con React y
 - [x] Cabecera del panel de proyectos, vista de creación (`CreateProjectView`) y formulario validado (`ProjectForm`) con React Hook Form
 - [x] Esquemas de proyecto con Zod (`Project`, `ProjectFormData`), cliente Axios con variables de entorno y `ProjectAPI.createProject`
 - [x] Notificaciones toast con React-Toastify y redirección al crear un proyecto
-- [ ] Gestión del estado del servidor con TanStack Query (`useMutation`, `useQuery` y DevTools)
+- [x] Configuración de TanStack Query (`QueryClientProvider`), `useMutation` para crear proyectos y manejo de errores con `isAxiosError`
+- [ ] Obtención y listado de proyectos en `DashboardView` con `useQuery` y React Query DevTools
 - [ ] Vistas para el CRUD completo de proyectos y modales interactivos para las tareas
 - [ ] Flujos de autenticación de usuarios (inicio de sesión, registro, confirmación de cuenta y recuperación de contraseña)
 - [ ] Vistas de gestión de equipos, permisos en interfaz según el rol, notas en tareas e historial de cambios
